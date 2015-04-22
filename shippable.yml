@@ -7,8 +7,8 @@ jdk:
 build_image: shippableimages/ubuntu1204_java
 
 # install maven
-#before_install:
-#  - apt-get install -y maven
+before_install:
+  - apt-get install -y maven --fix-missing
 
 # Activate jdk
 before_script:
